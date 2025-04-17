@@ -2,6 +2,12 @@
 
 A fun and interactive coding quiz application that tests your knowledge with a touch of humor! Built with React, TypeScript, and Express.
 
+## 🎥 Live Demo
+
+Watch the application pass both component and end to end tests on the command line! [View Demo Video](https://app.screencastify.com/v3/watch/xSiMuLLj56mUrcq7NR7l)
+
+![Quiz Me Bro Screenshot](assets/Quiz-Me-Bro.png)
+
 ## 🚀 Features
 
 - 📝 Dynamic quiz questions with multiple-choice answers
@@ -29,32 +35,33 @@ A fun and interactive coding quiz application that tests your knowledge with a t
 
 2. Install dependencies:
    ```bash
-   # Install root dependencies
-   npm install
-
-   # Install client dependencies
-   cd client
-   npm install
-
-   # Install server dependencies
-   cd ../server
+   # Install all dependencies (root, client, and server)
    npm install
    ```
 
 3. Set up the environment:
    ```bash
    # In the server directory
+   cd server
    cp .env.EXAMPLE .env
    ```
 
-4. Start the development servers:
+4. Seed the database:
    ```bash
-   # In the root directory
-   npm run dev
+   # In the server directory
+   npm run seed
    ```
 
-5. Run the tests:
+5. Start the application:
    ```bash
+   # From the root directory
+   npm run start:dev
+   ```
+   This will start both the client and server concurrently.
+
+6. Run the tests:
+   ```bash
+   # From the root directory
    npm test
    ```
 
@@ -98,7 +105,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🙏 Acknowledgments
 
-- Thanks to all the contributors who help make this project better
+- Thanks to the EdX Bootcamp for providing the starter code which I modified
 - Special thanks to the React and TypeScript communities
 - And of course, thanks to coffee ☕ for keeping us coding!
 
