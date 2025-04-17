@@ -1,3 +1,4 @@
+/* Root variables for consistent theming */
 :root {
   --primary-color: #00ff00;
   --secondary-color: #0000ff;
@@ -6,6 +7,7 @@
   --border-color: #00ff00;
 }
 
+/* Base styles */
 body {
   font-family: 'VT323', monospace;
   background-color: var(--background-color);
@@ -17,6 +19,7 @@ body {
   background-size: 20px 20px;
 }
 
+/* Typography */
 h1,
 h2,
 h3,
@@ -28,6 +31,7 @@ h6 {
   letter-spacing: 2px;
 }
 
+/* Title styling with glitch effect */
 .quiz-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
@@ -38,6 +42,7 @@ h6 {
   animation: glitch 1s infinite;
 }
 
+/* Glitch animation keyframes */
 @keyframes glitch {
   0% { transform: translate(0) }
   20% { transform: translate(-2px, 2px) }
@@ -47,6 +52,7 @@ h6 {
   100% { transform: translate(0) }
 }
 
+/* Card styling with hover effects */
 .card {
   background-color: rgba(0, 0, 0, 0.8);
   border: 4px solid var(--border-color);
@@ -62,6 +68,7 @@ h6 {
   box-shadow: 12px 12px 0px var(--secondary-color);
 }
 
+/* Button styling */
 .btn-primary {
   background-color: var(--primary-color);
   border: 4px solid var(--border-color);
@@ -81,6 +88,7 @@ h6 {
   box-shadow: 6px 6px 0px var(--primary-color);
 }
 
+/* Alert styling */
 .alert-success {
   background-color: var(--primary-color);
   border: 4px solid var(--border-color);
@@ -93,13 +101,14 @@ h6 {
   box-shadow: 4px 4px 0px var(--secondary-color);
 }
 
+/* Text styling */
 .small {
   font-family: 'VT323', monospace;
   font-size: 1.2rem;
   color: var(--primary-color);
 }
 
-/* Loading spinner animation */
+/* Loading spinner */
 .spinner-border {
   color: var(--primary-color);
   width: 3rem;
